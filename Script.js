@@ -1,10 +1,7 @@
-// define websites we have to block
-var blockedSites = [
-    
+var blockedSites = [    "facebook.com",    "instagram.com",    "tiktok.com",    "reddit.com"];
 
-]
 //listen for webrequests and block them
-chrome.webRequest.OnBeforeRequest.addListener(
+chrome.webRequest.onBeforeRequest.addListener(
     function(details){
         for (var i = 0; i < blockedSites.length; i++){
             if(details.url.indexOf(blockedSites[i])!=-1){
@@ -12,7 +9,7 @@ chrome.webRequest.OnBeforeRequest.addListener(
             }
         }
     },
-    {urls:["<all_urls>"]},
+    {urls:["<all_urls>"]
     ["blocking"]
 );
 chrome.storage.onChanged.addListener(
