@@ -19,4 +19,8 @@
             ]
         }
     ]
+    "permissions": [
+    "webRequest",
+    "*://*.google.com/"
+  ],
 }
