@@ -1,0 +1,31 @@
+{
+
+"manifest_version":3,
+
+"name":"Focus plus",
+
+"description":"A chrome extension that helps you focus and be productive online by blocking you from accessing socialmedia",
+
+"icons":{"48":"ic.png"},
+
+"version":"1.0.0",
+
+"content_scripts":[
+
+{
+
+"matches":["<all_urls>"],
+
+"js":["script.js"],
+
+"css":["style.css"]
+
+}
+
+]
+
+
+
+
+
+}
