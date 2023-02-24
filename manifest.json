@@ -18,9 +18,8 @@
                 "style.css"
             ]
         }
-    ]
+    ],
     "permissions": [
     "webRequest",
-    "*://*.google.com/"
-  ],
+    "*://*.google.com/"]
 }
